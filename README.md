@@ -1,2 +1,6 @@
-# puc-spring-eureka-zuul
-Projeto de SpringCloud Turma 2021.2 Serviços seguros.
+# spring-eureka-zuul
+
+Projeto java com Spring Zull Eureka
+
+
+
