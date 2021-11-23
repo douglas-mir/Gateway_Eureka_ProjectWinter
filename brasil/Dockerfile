@@ -1,4 +1,4 @@
-FROM maven:3.8-jdk-11-slim AS MAVEN_BUILD
+FROM maven:3.8-openjdk-11-slim AS MAVEN_BUILD
 WORKDIR /build
 COPY pom.xml .
 RUN mvn dependency:go-offline

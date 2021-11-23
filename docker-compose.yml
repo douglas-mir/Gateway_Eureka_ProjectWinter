@@ -49,6 +49,18 @@ services:
       EUREKA_URL: brasil-service
       EUREKA_DEFAULT_ZONE: 'http://eureka-service:8761/eureka'
 
+  projectWinter-service:
+    image: 'projectwinter/projectwinter-service:latest'
+    networks:
+      - projectWinter-network
+    ports:
+      - "8050:8050"
+    depends_on:
+      - eureka-service
+    environment:
+      EUREKA_URL: projectWinter-service
+      EUREKA_DEFAULT_ZONE: 'http://eureka-service:8761/eureka'
+
 
 #############################################################
 ######################### NETWORK ###########################

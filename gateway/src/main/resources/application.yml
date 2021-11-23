@@ -20,7 +20,10 @@ spring:
           uri: lb://JAPAO
           predicates:
             - Path=/japao/**
-
+        - id: projectWinter
+          uri: lb://PROJECTWINTER
+          predicates:
+            - Path=/projectWinter/**
 management:
   endpoints:
     web:
